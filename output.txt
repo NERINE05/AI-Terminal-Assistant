@@ -1,0 +1,11 @@
+.assistant_history
+app
+config.yaml
+data
+model
+notepad.txt
+output.txt
+README.md
+requirements.txt
+test_llm.py
+venv

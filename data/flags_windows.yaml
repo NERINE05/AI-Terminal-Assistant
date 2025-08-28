@@ -1,0 +1,74 @@
+# ---------- Windows CMD ----------
+dir:
+  /a: "Display files with specified attributes (e.g., hidden, system)"
+  /b: "Bare format (no heading info)"
+  /s: "List files in all subdirectories"
+  /p: "Pause after each screen of output"
+  /o: "Sort order (n=name, e=extension, d=date, s=size)"
+
+copy:
+  /y: "Suppress confirmation prompt when overwriting files"
+  /v: "Verify each file is written correctly"
+  /a: "Indicates ASCII text file"
+  /b: "Indicates binary file"
+
+move:
+  /y: "Suppress confirmation prompt when overwriting"
+  /-y: "Prompt before overwrite"
+
+del:
+  /f: "Force delete read-only files"
+  /s: "Delete from all subdirectories"
+  /q: "Quiet mode (no confirmation)"
+
+tasklist:
+  /fi: "Filter tasks by condition (e.g., 'imagename eq notepad.exe')"
+  /m: "Show modules loaded by tasks"
+  /svc: "Show services hosted in each process"
+  /v: "Verbose task info"
+
+taskkill:
+  /pid: "Kill process by PID"
+  /im: "Kill process by image name"
+  /f: "Forcefully terminate"
+  /t: "Kill process and its child processes"
+
+# ---------- Windows PowerShell ----------
+Get-Process:
+  -Name: "Filter processes by name"
+  -Id: "Filter processes by ID"
+  -FileVersionInfo: "Show version info of the executable"
+
+Stop-Process:
+  -Name: "Stop process by name"
+  -Id: "Stop process by ID"
+  -Force: "Force kill process"
+
+Get-ChildItem:
+  -Recurse: "Include all child items recursively"
+  -Hidden: "Include hidden items"
+  -File: "Show only files"
+  -Directory: "Show only directories"
+
+Copy-Item:
+  -Recurse: "Copy items recursively"
+  -Force: "Overwrite without confirmation"
+  -Verbose: "Show progress of copy"
+
+Remove-Item:
+  -Recurse: "Remove items recursively"
+  -Force: "Suppress confirmation prompts"
+  -Verbose: "Show removed items"
+
+Get-Content:
+  -TotalCount: "Display first N lines"
+  -Tail: "Display last N lines"
+  -Wait: "Wait for new lines (like tail -f)"
+
+dir:
+  _desc: Lists files and directories in the current folder.
+  /a: Display files with specified attributes.
+  /b: Bare format (no heading info).
+  /s: List files in all subdirectories.
+  /p: Pauses after each screen of information.
+  /o: Lists files in sorted order.

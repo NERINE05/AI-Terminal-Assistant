@@ -1,0 +1,103 @@
+# ---------- Linux / macOS ----------
+ls:
+  -l: "Use a long listing format (permissions, size, owner, etc.)"
+  -a: "Show hidden files (those starting with .)"
+  -h: "Human-readable sizes (e.g., KB, MB)"
+  -R: "List subdirectories recursively"
+
+cp:
+  -r: "Copy directories recursively"
+  -i: "Prompt before overwrite"
+  -v: "Verbose mode (show files being copied)"
+  -u: "Copy only when the SOURCE file is newer"
+
+mv:
+  -i: "Prompt before overwrite"
+  -v: "Verbose mode (show moved files)"
+  -n: "Do not overwrite existing files"
+
+rm:
+  -r: "Remove directories and their contents recursively"
+  -f: "Force remove without asking"
+  -i: "Prompt before each removal"
+  -v: "Verbose mode (show removed files)"
+
+grep:
+  -i: "Ignore case distinctions"
+  -r: "Search recursively through directories"
+  -n: "Show line numbers in output"
+  -v: "Invert match (show non-matching lines)"
+  -E: "Enable extended regex"
+  -o: "Show only the matched part of the line"
+
+find:
+  -name: "Search by file name"
+  -type: "Search by file type (f=file, d=directory)"
+  -size: "Search by file size"
+  -exec: "Execute a command on matching files"
+
+cat:
+  -n: "Number all output lines"
+  -b: "Number non-blank lines only"
+  -s: "Suppress repeated empty lines"
+
+echo:
+  -n: "Do not output the trailing newline"
+  -e: "Enable interpretation of backslash escapes"
+
+chmod:
+  -R: "Apply permissions recursively to directories"
+  -v: "Verbose mode (show changed files)"
+
+chown:
+  -R: "Apply ownership changes recursively"
+  -v: "Verbose mode (show changed files)"
+
+ps:
+  -e: "Show all processes"
+  -f: "Full-format listing (more details)"
+  -u: "Show processes for a specific user"
+  -aux: "Show all processes with detailed info"
+
+kill:
+  -9: "Force kill a process (SIGKILL)"
+  -15: "Gracefully terminate a process (default SIGTERM)"
+  -l: "List all signal names"
+
+tar:
+  -c: "Create a new archive"
+  -x: "Extract an archive"
+  -t: "List archive contents"
+  -v: "Verbose mode (show files processed)"
+  -f: "Specify the filename of the archive"
+  -z: "Filter the archive through gzip"
+  -j: "Filter the archive through bzip2"
+
+zip:
+  -r: "Recursively zip directories"
+  -9: "Use maximum compression"
+  -q: "Quiet mode (suppress output)"
+
+unzip:
+  -l: "List archive contents"
+  -v: "Verbose listing of files"
+  -d: "Extract to specified directory"
+  -q: "Quiet mode (suppress output)"
+
+df:
+  -h: "Human-readable sizes (e.g., MB, GB)"
+  -T: "Show filesystem type"
+  -i: "Show inode information"
+
+du:
+  -h: "Human-readable sizes (KB, MB, GB)"
+  -s: "Show only the total size"
+  -a: "Show sizes of all files, not just directories"
+  -c: "Show grand total"
+
+ls:
+  _desc: Lists files and directories in the current folder.
+  -l: Use a long listing format.
+  -a: Include hidden files.
+  -h: Human-readable sizes.
+  -R: List files recursively in subdirectories.

@@ -1,0 +1,9 @@
+gpt4all==2.8.2
+prompt_toolkit==3.0.47
+rich==13.7.1
+pyyaml==6.0.2
+platformdirs==4.3.6
+psutil==6.0.0
+vosk==0.3.45
+sounddevice==0.4.7
+PyAudio==0.2.14; platform_system=="Windows"

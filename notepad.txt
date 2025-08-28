@@ -1,0 +1,7 @@
+python -m venv venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\activate
+
+cd C:\Users\Nidhi\Downloads
+pip install llama_cpp_python-0.3.2-cp311-cp311-win_amd64.whl
+cd 'C:\Users\Nidhi\Desktop\FInal year project implementation'
